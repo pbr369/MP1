@@ -1,0 +1,73 @@
+.grid-line {
+  background-color: #dddbcb;
+  overflow: hidden;
+  display: block;
+  color: #050505;
+  text-align: center;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+
+.eyetemscon1 {
+  border: 5px solid black;
+  border-radius: 20px;
+  color: #303030;
+  width: 100%;
+  height: 500px;
+  background-color: #dddbcb;
+}
+
+.btnlogin {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-size: 15px;
+  width: 100px;
+  height: 40px;
+}
+
+.btnreg {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-size: 15px;
+  width: 100px;
+  height: 40px;
+}
+
+.searchbtn {
+  width: 210px;
+  height: 40px;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border-right: none;
+  border: white;
+  outline: 0;
+}
+
+.searchbtn:focus {
+  box-shadow: 0 0 5px black;
+}
+/* F8F8F8 */
+.searchiconbtn {
+  width: 50px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  border-left: none;
+  border: white;
+  background-color: white;
+}
+
+.searchiconbtn:hover {
+  color: #008080;
+}
+
+.navbarcolor {
+  background-color: #008080;
+}
+
+body {
+  background-color: #050505;
+}

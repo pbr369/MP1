@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EyeTems</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="sticky-top navbarcolor">
+      <div class="container p-0">
+        <div class="row-fluid">
+          <nav class="navbar navbar-expand-lg navbarcolor">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"
+                ><img src="images/logo.png" alt="" width="64" height="64"
+              /></a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">FAQ</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Categories
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Items</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Game Currency</a>
+                      </li>
+                      <li><a class="dropdown-item" href="#">Accounts</a></li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Buy</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Sell</a>
+                  </li>
+                </ul>
+                <form class="d-flex px-3" role="search">
+                  <input
+                    class="searchbtn"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <button class="searchiconbtn" type="submit">
+                    <i class="ri-search-line"></i>
+                  </button>
+                </form>
+                <button type="button" name="btnlogin" class="btnlogin">
+                  Login
+                </button>
+                <button type="button" name="btnreg" class="btnreg">
+                  Register
+                </button>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="grid-line d-flex"></div>
+    </header>
+    <div class="container">
+      <div class="row">
+        <div
+          id="carouselExampleInterval"
+          class="carousel slide py-2"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner rounded-4">
+            <div class="carousel-item active" data-bs-interval="3000">
+              <img
+                src="images/banner1.jpg"
+                class="d-block w-100 rounded-4"
+                alt="..."
+                width="250"
+                height="300"
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="images/banner2.jpg"
+                class="d-block w-100 rounded-4"
+                alt="..."
+                width="250"
+                height="300"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="images/banner3.jpg"
+                class="d-block w-100 rounded-4"
+                alt="..."
+                width="250"
+                height="300"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="container py-2">
+      <div class="row d-flex">
+        <h2>Exclusive Offers</h2>
+        <div class="col-2 d-flex">
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="images/gameicons/pubg.png"
+                  class="img-fluid rounded-start h-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">PUBG</h5>
+                  <p class="card-text">
+                    <small class="text-muted">(-20% off)</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 d-flex">
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="images/gameicons/levelup.png"
+                  class="img-fluid rounded-start h-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">PUBG</h5>
+                  <p class="card-text">
+                    <small class="text-muted">(-20% off)</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 d-flex">
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="images/gameicons/apple.png"
+                  class="img-fluid rounded-start h-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">PUBG</h5>
+                  <p class="card-text">
+                    <small class="text-muted">(-20% off)</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 d-flex">
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="images/gameicons/amazon.png"
+                  class="img-fluid rounded-start h-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">PUBG</h5>
+                  <p class="card-text">
+                    <small class="text-muted">(-20% off)</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 d-flex">
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="images/gameicons/cherry.png"
+                  class="img-fluid rounded-start h-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">PUBG</h5>
+                  <p class="card-text">
+                    <small class="text-muted">(-20% off)</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 d-flex">
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="images/gameicons/fifa.png"
+                  class="img-fluid rounded-start h-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">PUBG</h5>
+                  <p class="card-text">
+                    <small class="text-muted">(-20% off)</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 d-flex">
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="images/gameicons/garena.png"
+                  class="img-fluid rounded-start h-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">PUBG</h5>
+                  <p class="card-text">
+                    <small class="text-muted">(-20% off)</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 d-flex">
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="images/gameicons/heart.png"
+                  class="img-fluid rounded-start h-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">PUBG</h5>
+                  <p class="card-text">
+                    <small class="text-muted">(-20% off)</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 d-flex">
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="images/gameicons/knives.png"
+                  class="img-fluid rounded-start h-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">PUBG</h5>
+                  <p class="card-text">
+                    <small class="text-muted">(-20% off)</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 d-flex">
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="images/gameicons/levelup.png"
+                  class="img-fluid rounded-start h-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">PUBG</h5>
+                  <p class="card-text">
+                    <small class="text-muted">(-20% off)</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 d-flex">
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="images/gameicons/lightthel.png"
+                  class="img-fluid rounded-start h-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">PUBG</h5>
+                  <p class="card-text">
+                    <small class="text-muted">(-20% off)</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 d-flex">
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="images/gameicons/metalslug.png"
+                  class="img-fluid rounded-start h-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">PUBG</h5>
+                  <p class="card-text">
+                    <small class="text-muted">(-20% off)</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 d-flex">
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="images/gameicons/mico.png"
+                  class="img-fluid rounded-start h-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">PUBG</h5>
+                  <p class="card-text">
+                    <small class="text-muted">(-20% off)</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 d-flex">
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="images/gameicons/mobilelegends.png"
+                  class="img-fluid rounded-start h-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">PUBG</h5>
+                  <p class="card-text">
+                    <small class="text-muted">(-20% off)</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 d-flex">
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="images/gameicons/mycard.png"
+                  class="img-fluid rounded-start h-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">PUBG</h5>
+                  <p class="card-text">
+                    <small class="text-muted">(-20% off)</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 d-flex">
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="images/gameicons/playstation.png"
+                  class="img-fluid rounded-start h-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">PUBG</h5>
+                  <p class="card-text">
+                    <small class="text-muted">(-20% off)</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 d-flex">
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="images/gameicons/ragnarok.png"
+                  class="img-fluid rounded-start h-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">PUBG</h5>
+                  <p class="card-text">
+                    <small class="text-muted">(-20% off)</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 d-flex">
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="images/gameicons/razer.png"
+                  class="img-fluid rounded-start h-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">PUBG</h5>
+                  <p class="card-text">
+                    <small class="text-muted">(-20% off)</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- START TOP GAMES -->
+    <div class="container py-2">
+      <div class="row">
+        <h2>Top Games</h2>
+        <div class="col-3 py-3">
+          <div class="card bg-dark text-white">
+            <img
+              src="https://seeklogo.com/images/V/valorant-logo-FAB2CA0E55-seeklogo.com.png"
+              class="card-img"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Valorant</h5>
+              <p class="card-text">FPS</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 py-3">
+          <div class="card bg-dark text-white">
+            <img
+              src="https://seeklogo.com/images/V/valorant-logo-FAB2CA0E55-seeklogo.com.png"
+              class="card-img"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Valorant</h5>
+              <p class="card-text">FPS</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 py-3">
+          <div class="card bg-dark text-white">
+            <img
+              src="https://seeklogo.com/images/V/valorant-logo-FAB2CA0E55-seeklogo.com.png"
+              class="card-img"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Valorant</h5>
+              <p class="card-text">FPS</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 py-3">
+          <div class="card bg-dark text-white">
+            <img
+              src="https://seeklogo.com/images/V/valorant-logo-FAB2CA0E55-seeklogo.com.png"
+              class="card-img"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Valorant</h5>
+              <p class="card-text">FPS</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 py-3">
+          <div class="card bg-dark text-white">
+            <img
+              src="https://seeklogo.com/images/V/valorant-logo-FAB2CA0E55-seeklogo.com.png"
+              class="card-img"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Valorant</h5>
+              <p class="card-text">FPS</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 py-3">
+          <div class="card bg-dark text-white">
+            <img
+              src="https://seeklogo.com/images/V/valorant-logo-FAB2CA0E55-seeklogo.com.png"
+              class="card-img"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Valorant</h5>
+              <p class="card-text">FPS</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 py-3">
+          <div class="card bg-dark text-white">
+            <img
+              src="https://seeklogo.com/images/V/valorant-logo-FAB2CA0E55-seeklogo.com.png"
+              class="card-img"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Valorant</h5>
+              <p class="card-text">FPS</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 py-3">
+          <div class="card bg-dark text-white">
+            <img
+              src="https://seeklogo.com/images/V/valorant-logo-FAB2CA0E55-seeklogo.com.png"
+              class="card-img"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Valorant</h5>
+              <p class="card-text">FPS</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END TOP GAMES -->
+
+    <!-- START TOP SOLD ITEMS -->
+    <div class="container py-2">
+      <div class="row">
+        <div class="col-12 eyetemscon1">
+          <h1>Top Sold Items</h1>
+        </div>
+      </div>
+    </div>
+    <!-- END TOP SOLD ITEMS -->
+
+    <!-- START CUSTOMER SUPPORT -->
+    <div class="container py-2">
+      <div class="row">
+        <div class="col-12 eyetemscon1">
+          <h1>Customer Support</h1>
+        </div>
+      </div>
+    </div>
+    <!-- END CUSTOMER SUPPORT -->
+
+    <!-- START PAYMENT METHODS -->
+    <div class="container py-2">
+      <div class="row">
+        <h1>Payment Methods</h1>
+      </div>
+    </div>
+    <!-- END PAYMENT METHODS -->
+
+    <!-- START FOOTER -->
+    <div class="container py-2">
+      <div class="row footer1">
+        <h1>Footer</h1>
+      </div>
+      <div class="row footer2">
+        <h1>Footer</h1>
+      </div>
+      <div class="row footer3">
+        <h1>Footer</h1>
+      </div>
+    </div>
+    <!-- END FOOTER -->
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"
+  ></script>
+</html>
