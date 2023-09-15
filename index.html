@@ -36,7 +36,7 @@
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav_ul">
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#"
                       >Home</a
@@ -58,18 +58,19 @@
                     >
                       Categories
                     </a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu nav_ul">
+                      <li><a class="dropdown-item" href="#">Game Coins</a></li>
                       <li><a class="dropdown-item" href="#">Items</a></li>
-                      <li>
-                        <a class="dropdown-item" href="#">Game Currency</a>
-                      </li>
                       <li><a class="dropdown-item" href="#">Accounts</a></li>
-                      <li><hr class="dropdown-divider" /></li>
+                      <li><a class="dropdown-item" href="#">Skins</a></li>
+                      <li><a class="dropdown-item" href="#">Top Up</a></li>
+                      <li><a class="dropdown-item" href="#">Gift Cards</a></li>
+                      <!-- <li><hr class="dropdown-divider" /></li>
                       <li>
                         <a class="dropdown-item" href="#"
                           >Something else here</a
                         >
-                      </li>
+                      </li> -->
                     </ul>
                   </li>
                   <li class="nav-item">
@@ -79,7 +80,7 @@
                     <a class="nav-link" href="#">Sell</a>
                   </li>
                 </ul>
-                <form class="d-flex px-3" role="search">
+                <form class="d-flex px-1" role="search">
                   <input
                     class="searchbtn"
                     type="search"
@@ -90,18 +91,55 @@
                     <i class="ri-search-line"></i>
                   </button>
                 </form>
+                <form class="d-flex px-1" role="button">
                 <button type="button" name="btnlogin" class="btnlogin">
                   Login
                 </button>
+                </form>
+                <form class="d-flex px-1" role="button">
                 <button type="button" name="btnreg" class="btnreg">
                   Register
                 </button>
+                </form>
+                
               </div>
             </div>
           </nav>
         </div>
       </div>
       <div class="grid-line d-flex"></div>
+      <!-- Messenger Chat plugin Code -->
+      <div id="fb-root"></div>
+
+      <!-- Your Chat plugin code -->
+      <div id="fb-customer-chat" class="fb-customerchat"></div>
+
+      <script>
+        var chatbox = document.getElementById("fb-customer-chat");
+        chatbox.setAttribute("page_id", "134284533095201");
+        chatbox.setAttribute("attribution", "biz_inbox");
+      </script>
+
+      <!-- Your SDK code -->
+      <script>
+        window.fbAsyncInit = function () {
+          FB.init({
+            xfbml: true,
+            version: "v18.0",
+          });
+        };
+
+        (function (d, s, id) {
+          var js,
+            fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s);
+          js.id = id;
+          js.src =
+            "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+          fjs.parentNode.insertBefore(js, fjs);
+        })(document, "script", "facebook-jssdk");
+      </script>
     </header>
     <div class="container">
       <div class="row">
@@ -110,11 +148,11 @@
           class="carousel slide py-2"
           data-bs-ride="carousel"
         >
-          <div class="carousel-inner rounded-4">
+          <div class="carousel-inner rounded-2">
             <div class="carousel-item active" data-bs-interval="3000">
               <img
                 src="images/banner1.jpg"
-                class="d-block w-100 rounded-4"
+                class="d-block w-100 rounded-2"
                 alt="..."
                 width="250"
                 height="300"
@@ -123,7 +161,7 @@
             <div class="carousel-item" data-bs-interval="2000">
               <img
                 src="images/banner2.jpg"
-                class="d-block w-100 rounded-4"
+                class="d-block w-100 rounded-2"
                 alt="..."
                 width="250"
                 height="300"
@@ -132,7 +170,7 @@
             <div class="carousel-item">
               <img
                 src="images/banner3.jpg"
-                class="d-block w-100 rounded-4"
+                class="d-block w-100 rounded-2"
                 alt="..."
                 width="250"
                 height="300"
@@ -160,494 +198,128 @@
         </div>
       </div>
     </div>
-    <div class="container py-2">
-      <div class="row d-flex">
-        <h2>Exclusive Offers</h2>
-        <div class="col-2 d-flex">
-          <div class="card mb-3" style="max-width: 540px">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img
-                  src="images/gameicons/pubg.png"
-                  class="img-fluid rounded-start h-100"
-                  alt="..."
-                />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">PUBG</h5>
-                  <p class="card-text">
-                    <small class="text-muted">(-20% off)</small>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+    <!-- Start Exclusive offers -->
+    <div class="container py2">
+      <div class="row">
+        <div class="col-2 py-3 d-flex justify-content-center">
+          <a href="#" class="catcat">
+            <div class="caticon_Coins catimage_Coins"></div>
+            <h6 class="text-center">Game Coins</h6>
+          </a>
         </div>
-        <div class="col-2 d-flex">
-          <div class="card mb-3" style="max-width: 540px">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img
-                  src="images/gameicons/levelup.png"
-                  class="img-fluid rounded-start h-100"
-                  alt="..."
-                />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">PUBG</h5>
-                  <p class="card-text">
-                    <small class="text-muted">(-20% off)</small>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="col-2 py-3 d-flex justify-content-center">
+          <a href="#" class="catcat">
+            <div class="caticon_Items catimage_Items"></div>
+            <h6 class="text-center">Items</h6>
+          </a>
         </div>
-        <div class="col-2 d-flex">
-          <div class="card mb-3" style="max-width: 540px">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img
-                  src="images/gameicons/apple.png"
-                  class="img-fluid rounded-start h-100"
-                  alt="..."
-                />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">PUBG</h5>
-                  <p class="card-text">
-                    <small class="text-muted">(-20% off)</small>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="col-2 py-3 d-flex justify-content-center">
+          <a href="#" class="catcat">
+            <div class="caticon_Acc catimage_Acc"></div>
+            <h6 class="text-center">Accounts</h6>
+          </a>
         </div>
-        <div class="col-2 d-flex">
-          <div class="card mb-3" style="max-width: 540px">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img
-                  src="images/gameicons/amazon.png"
-                  class="img-fluid rounded-start h-100"
-                  alt="..."
-                />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">PUBG</h5>
-                  <p class="card-text">
-                    <small class="text-muted">(-20% off)</small>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="col-2 py-3 d-flex justify-content-center">
+          <a href="#" class="catcat">
+            <div class="caticon_Skins catimage_Skins"></div>
+            <h6 class="text-center">Skins</h6>
+          </a>
         </div>
-        <div class="col-2 d-flex">
-          <div class="card mb-3" style="max-width: 540px">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img
-                  src="images/gameicons/cherry.png"
-                  class="img-fluid rounded-start h-100"
-                  alt="..."
-                />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">PUBG</h5>
-                  <p class="card-text">
-                    <small class="text-muted">(-20% off)</small>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="col-2 py-3 d-flex justify-content-center">
+          <a href="#" class="catcat">
+            <div class="caticon_Topup catimage_Topup"></div>
+            <h6 class="text-center">Top Up</h6>
+          </a>
         </div>
-        <div class="col-2 d-flex">
-          <div class="card mb-3" style="max-width: 540px">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img
-                  src="images/gameicons/fifa.png"
-                  class="img-fluid rounded-start h-100"
-                  alt="..."
-                />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">PUBG</h5>
-                  <p class="card-text">
-                    <small class="text-muted">(-20% off)</small>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-2 d-flex">
-          <div class="card mb-3" style="max-width: 540px">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img
-                  src="images/gameicons/garena.png"
-                  class="img-fluid rounded-start h-100"
-                  alt="..."
-                />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">PUBG</h5>
-                  <p class="card-text">
-                    <small class="text-muted">(-20% off)</small>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-2 d-flex">
-          <div class="card mb-3" style="max-width: 540px">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img
-                  src="images/gameicons/heart.png"
-                  class="img-fluid rounded-start h-100"
-                  alt="..."
-                />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">PUBG</h5>
-                  <p class="card-text">
-                    <small class="text-muted">(-20% off)</small>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-2 d-flex">
-          <div class="card mb-3" style="max-width: 540px">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img
-                  src="images/gameicons/knives.png"
-                  class="img-fluid rounded-start h-100"
-                  alt="..."
-                />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">PUBG</h5>
-                  <p class="card-text">
-                    <small class="text-muted">(-20% off)</small>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-2 d-flex">
-          <div class="card mb-3" style="max-width: 540px">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img
-                  src="images/gameicons/levelup.png"
-                  class="img-fluid rounded-start h-100"
-                  alt="..."
-                />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">PUBG</h5>
-                  <p class="card-text">
-                    <small class="text-muted">(-20% off)</small>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-2 d-flex">
-          <div class="card mb-3" style="max-width: 540px">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img
-                  src="images/gameicons/lightthel.png"
-                  class="img-fluid rounded-start h-100"
-                  alt="..."
-                />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">PUBG</h5>
-                  <p class="card-text">
-                    <small class="text-muted">(-20% off)</small>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-2 d-flex">
-          <div class="card mb-3" style="max-width: 540px">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img
-                  src="images/gameicons/metalslug.png"
-                  class="img-fluid rounded-start h-100"
-                  alt="..."
-                />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">PUBG</h5>
-                  <p class="card-text">
-                    <small class="text-muted">(-20% off)</small>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-2 d-flex">
-          <div class="card mb-3" style="max-width: 540px">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img
-                  src="images/gameicons/mico.png"
-                  class="img-fluid rounded-start h-100"
-                  alt="..."
-                />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">PUBG</h5>
-                  <p class="card-text">
-                    <small class="text-muted">(-20% off)</small>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-2 d-flex">
-          <div class="card mb-3" style="max-width: 540px">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img
-                  src="images/gameicons/mobilelegends.png"
-                  class="img-fluid rounded-start h-100"
-                  alt="..."
-                />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">PUBG</h5>
-                  <p class="card-text">
-                    <small class="text-muted">(-20% off)</small>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-2 d-flex">
-          <div class="card mb-3" style="max-width: 540px">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img
-                  src="images/gameicons/mycard.png"
-                  class="img-fluid rounded-start h-100"
-                  alt="..."
-                />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">PUBG</h5>
-                  <p class="card-text">
-                    <small class="text-muted">(-20% off)</small>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-2 d-flex">
-          <div class="card mb-3" style="max-width: 540px">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img
-                  src="images/gameicons/playstation.png"
-                  class="img-fluid rounded-start h-100"
-                  alt="..."
-                />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">PUBG</h5>
-                  <p class="card-text">
-                    <small class="text-muted">(-20% off)</small>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-2 d-flex">
-          <div class="card mb-3" style="max-width: 540px">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img
-                  src="images/gameicons/ragnarok.png"
-                  class="img-fluid rounded-start h-100"
-                  alt="..."
-                />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">PUBG</h5>
-                  <p class="card-text">
-                    <small class="text-muted">(-20% off)</small>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-2 d-flex">
-          <div class="card mb-3" style="max-width: 540px">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img
-                  src="images/gameicons/razer.png"
-                  class="img-fluid rounded-start h-100"
-                  alt="..."
-                />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">PUBG</h5>
-                  <p class="card-text">
-                    <small class="text-muted">(-20% off)</small>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="col-2 py-3 d-flex justify-content-center">
+          <a href="#" class="catcat">
+            <div class="caticon_Giftcard catimage_Giftcard"></div>
+            <h6 class="text-center">Gift Cards</h6>
+          </a>
         </div>
       </div>
     </div>
     <!-- START TOP GAMES -->
     <div class="container py-2">
       <div class="row">
-        <h2>Top Games</h2>
+        <h3>Top Games</h3>
         <div class="col-3 py-3">
           <div class="card bg-dark text-white">
             <img
-              src="https://seeklogo.com/images/V/valorant-logo-FAB2CA0E55-seeklogo.com.png"
+              src="images/gamelogo/valorant.png"
               class="card-img"
               alt="..."
             />
             <div class="card-body">
               <h5 class="card-title">Valorant</h5>
-              <p class="card-text">FPS</p>
+              <p class="card-text">2,305 listings</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 py-3">
+          <div class="card bg-dark text-white">
+            <img src="images/gamelogo/albion.jpg" class="card-img" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Albion Online</h5>
+              <p class="card-text">2,106 listings</p>
             </div>
           </div>
         </div>
         <div class="col-3 py-3">
           <div class="card bg-dark text-white">
             <img
-              src="https://seeklogo.com/images/V/valorant-logo-FAB2CA0E55-seeklogo.com.png"
+              src="images/gamelogo/blackdesert.png"
               class="card-img"
               alt="..."
             />
             <div class="card-body">
-              <h5 class="card-title">Valorant</h5>
-              <p class="card-text">FPS</p>
+              <h5 class="card-title">Black Desert Online</h5>
+              <p class="card-text">1,955 listings</p>
             </div>
           </div>
         </div>
         <div class="col-3 py-3">
           <div class="card bg-dark text-white">
-            <img
-              src="https://seeklogo.com/images/V/valorant-logo-FAB2CA0E55-seeklogo.com.png"
-              class="card-img"
-              alt="..."
-            />
+            <img src="images/gamelogo/c9.png" class="card-img" alt="..." />
             <div class="card-body">
-              <h5 class="card-title">Valorant</h5>
-              <p class="card-text">FPS</p>
+              <h5 class="card-title">Continent of the Ninth</h5>
+              <p class="card-text">1,507 listings</p>
             </div>
           </div>
         </div>
         <div class="col-3 py-3">
           <div class="card bg-dark text-white">
-            <img
-              src="https://seeklogo.com/images/V/valorant-logo-FAB2CA0E55-seeklogo.com.png"
-              class="card-img"
-              alt="..."
-            />
+            <img src="images/gamelogo/codm.png" class="card-img" alt="..." />
             <div class="card-body">
-              <h5 class="card-title">Valorant</h5>
-              <p class="card-text">FPS</p>
+              <h5 class="card-title">Call of Duty: Mobile</h5>
+              <p class="card-text">1,369 listings</p>
             </div>
           </div>
         </div>
         <div class="col-3 py-3">
           <div class="card bg-dark text-white">
-            <img
-              src="https://seeklogo.com/images/V/valorant-logo-FAB2CA0E55-seeklogo.com.png"
-              class="card-img"
-              alt="..."
-            />
+            <img src="images/gamelogo/genshin.png" class="card-img" alt="..." />
             <div class="card-body">
-              <h5 class="card-title">Valorant</h5>
-              <p class="card-text">FPS</p>
+              <h5 class="card-title">Genshin Impact</h5>
+              <p class="card-text">963 listings</p>
             </div>
           </div>
         </div>
         <div class="col-3 py-3">
           <div class="card bg-dark text-white">
-            <img
-              src="https://seeklogo.com/images/V/valorant-logo-FAB2CA0E55-seeklogo.com.png"
-              class="card-img"
-              alt="..."
-            />
+            <img src="images/gamelogo/ml.png" class="card-img" alt="..." />
             <div class="card-body">
-              <h5 class="card-title">Valorant</h5>
-              <p class="card-text">FPS</p>
+              <h5 class="card-title">Mobile Legends</h5>
+              <p class="card-text">693 listings</p>
             </div>
           </div>
         </div>
         <div class="col-3 py-3">
           <div class="card bg-dark text-white">
-            <img
-              src="https://seeklogo.com/images/V/valorant-logo-FAB2CA0E55-seeklogo.com.png"
-              class="card-img"
-              alt="..."
-            />
+            <img src="images/gamelogo/pubg.png" class="card-img" alt="..." />
             <div class="card-body">
-              <h5 class="card-title">Valorant</h5>
-              <p class="card-text">FPS</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-3 py-3">
-          <div class="card bg-dark text-white">
-            <img
-              src="https://seeklogo.com/images/V/valorant-logo-FAB2CA0E55-seeklogo.com.png"
-              class="card-img"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Valorant</h5>
-              <p class="card-text">FPS</p>
+              <h5 class="card-title">PUBG</h5>
+              <p class="card-text">369 listings</p>
             </div>
           </div>
         </div>
@@ -658,75 +330,555 @@
     <!-- START TOP SOLD ITEMS -->
     <div class="container py-2">
       <div class="row">
-        <div class="col-12 eyetemscon1">
-          <h1>Top Sold Items</h1>
+        <h3>Top Selling Listings</h3>
+        <div class="col-2 py-3">
+          <div class="card bg-dark text-white">
+            <img
+              src="images/items/assassin.png"
+              class="card_img_item"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Assassin Jacket</h5>
+              <p class="card-text">3,693 sold</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 py-3">
+          <div class="card bg-dark text-white">
+            <img
+              src="images/items/mercenary.png"
+              class="card_img_item"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Mercenary Jacket</h5>
+              <p class="card-text">3,323 sold</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 py-3">
+          <div class="card bg-dark text-white">
+            <img
+              src="images/items/cleric.png"
+              class="card_img_item"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Cleric Robe</h5>
+              <p class="card-text">3,196 sold</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 py-3">
+          <div class="card bg-dark text-white">
+            <img
+              src="images/items/bearpaw.png"
+              class="card_img_item"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Bear Paws</h5>
+              <p class="card-text">2,963 sold</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 py-3">
+          <div class="card bg-dark text-white">
+            <img
+              src="images/items/mammoth.png"
+              class="card_img_item"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Mammoth</h5>
+              <p class="card-text">2,669 sold</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 py-3">
+          <div class="card bg-dark text-white">
+            <img
+              src="images/items/druidicstaff.png"
+              class="card_img_item"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Druidic Staff</h5>
+              <p class="card-text">2,336 sold</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 py-3">
+          <div class="card bg-dark text-white">
+            <img
+              src="images/items/specter.png"
+              class="card_img_item"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Specter</h5>
+              <p class="card-text">1,894 sold</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 py-3">
+          <div class="card bg-dark text-white">
+            <img src="images/items/royal.png" class="card_img_item" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Royal Sandals</h5>
+              <p class="card-text">1,738 sold</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 py-3">
+          <div class="card bg-dark text-white">
+            <img
+              src="images/items/cryptcradle.png"
+              class="card_img_item"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Cryptcradle</h5>
+              <p class="card-text">1,593 sold</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 py-3">
+          <div class="card bg-dark text-white">
+            <img
+              src="images/items/chillhowl.png"
+              class="card_img_item"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Chillhowl</h5>
+              <p class="card-text">1,396 sold</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 py-3">
+          <div class="card bg-dark text-white">
+            <img src="images/items/torch.png" class="card_img_item" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Torch</h5>
+              <p class="card-text">1,293 sold</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 py-3">
+          <div class="card bg-dark text-white">
+            <img
+              src="images/items/ancientent.png"
+              class="card_img_item"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Ancient Ent</h5>
+              <p class="card-text">1,169 sold</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 py-3">
+          <div class="card bg-dark text-white">
+            <img
+              src="images/items/EliteWinterBear.png"
+              class="card_img_item"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Winter Bear</h5>
+              <p class="card-text">963 sold</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 py-3">
+          <div class="card bg-dark text-white">
+            <img
+              src="images/items/CrystalBattleEagle.png"
+              class="card_img_item"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Battle Eagle</h5>
+              <p class="card-text">865 sold</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 py-3">
+          <div class="card bg-dark text-white">
+            <img
+              src="images/items/CrystalBattleRhino.png"
+              class="card_img_item"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Battle Rhino</h5>
+              <p class="card-text">765 sold</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 py-3">
+          <div class="card bg-dark text-white">
+            <img
+              src="images/items/CrystalBehemoth.png"
+              class="card_img_item"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Behemoth</h5>
+              <p class="card-text">639 sold</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 py-3">
+          <div class="card bg-dark text-white">
+            <img
+              src="images/items/CrystalPhalanxBeetle.png"
+              class="card_img_item"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Phalanx Beetle</h5>
+              <p class="card-text">369 sold</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 py-3">
+          <div class="card bg-dark text-white">
+            <img
+              src="images/items/permafrost.png"
+              class="card_img_item"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Perma Frost</h5>
+              <p class="card-text">263 sold</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <!-- END TOP SOLD ITEMS -->
 
     <!-- START CUSTOMER SUPPORT -->
-    <div class="container py-2">
-      <div class="row">
-        <div class="col-12 eyetemscon1">
-          <h1>Customer Support</h1>
+    <div class="cust_bg">
+      <div class="container">
+        <div class="row py-3">
+          <div class="col-4 text-center py-3">
+            <img
+              class="card_img_cust"
+              src="images/icons/support/shield.svg"
+              alt=""
+            />
+            <h4>Secure Transactions</h4>
+            <h6>
+              Feel confident each time you transact with us. GamerProtect comes
+              with SSL protection and wide range of payment processors under a
+              safe and secured platform.
+            </h6>
+          </div>
+          <div class="col-4 text-center py-3">
+            <img
+              class="card_img_cust"
+              src="images/icons/support/cs.svg"
+              alt=""
+            />
+            <h4>Customer Support</h4>
+            <h6>
+              Our dedicated Customer Service team are available to help with any
+              queries about your orders and provide exceptional after-sales
+              support.
+            </h6>
+          </div>
+          <div class="col-4 text-center py-3">
+            <img
+              class="card_img_cust"
+              src="images/icons/support/bestoffers.svg"
+              alt=""
+            />
+            <h4>Best Offers</h4>
+            <h6>
+              EyeTems provides competitive pricing to the buyers driven by a
+              free market economy while striving to keep the cost low for our
+              sellers.
+            </h6>
+          </div>
         </div>
       </div>
     </div>
     <!-- END CUSTOMER SUPPORT -->
 
     <!-- START PAYMENT METHODS -->
-    <div class="container py-2">
-      <div class="row">
-        <h1>Payment Methods</h1>
+    <div class="pay_bg">
+      <div class="container">
+        <h3>Payment Methods</h3>
+        <div class="row">
+          <div class="col-1 text-center py-2">
+            <img
+              src="images/icons/payments/card.png"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-1 text-center py-2">
+            <img src="images/icons/payments/gc.png" alt="" class="img-fluid" />
+          </div>
+          <div class="col-1 text-center py-2">
+            <img src="images/icons/payments/pp.png" alt="" class="img-fluid" />
+          </div>
+          <div class="col-1 text-center py-2">
+            <img
+              src="images/icons/payments/grab.png"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-1 text-center py-2">
+            <img
+              src="images/icons/payments/Shopee.png"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-1 text-center py-2">
+            <img
+              src="images/icons/payments/paymaya.png"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-1 text-center py-2">
+            <img src="images/icons/payments/btc.png" alt="" class="img-fluid" />
+          </div>
+          <div class="col-1 text-center py-2">
+            <img
+              src="images/icons/payments/usdt.png"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-1 text-center py-2">
+            <img
+              src="images/icons/payments/usdc.png"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-1 text-center py-2">
+            <img
+              src="images/icons/payments/BinancePay.png"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-1 text-center py-2">
+            <img
+              src="images/icons/payments/coinsph.png"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-1 text-center py-2">
+            <img
+              src="images/icons/payments/unionbank-dragonpay-130x70.png"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-1 text-center py-2">
+            <img
+              src="images/icons/payments/bpi-dragonpay-130x70.png"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-1 text-center py-2">
+            <img
+              src="images/icons/payments/bdo-dragonpay-130x70.png"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-1 text-center py-2">
+            <img
+              src="images/icons/payments/chinabank-dragonpay-130x70.png"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-1 text-center py-2">
+            <img
+              src="images/icons/payments/metrobank-dragonpay-130x70.png"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-1 text-center py-2">
+            <img
+              src="images/icons/payments/pnb-dragonpay-130x70.png"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-1 text-center py-2">
+            <img
+              src="images/icons/payments/psbank-dragonpay-130x70.png"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-1 text-center py-2">
+            <img
+              src="images/icons/payments/robinsonbank-dragonpay-130x70.png"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-1 text-center py-2">
+            <img
+              src="images/icons/payments/aub-dragonpay-130x70.png"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-1 text-center py-2">
+            <img
+              src="images/icons/payments/bdo-dragonpay-130x70.png"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-1 text-center py-2">
+            <img
+              src="images/icons/payments/cebuana-dragonpay-130x70.png"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-1 text-center py-2">
+            <img
+              src="images/icons/payments/ecpay-dragonpay-130x70.png"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-1 text-center py-2">
+            <img
+              src="images/icons/payments/mlhuillier-dragonpay-130x70.png"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-1 text-center py-2">
+            <img
+              src="images/icons/payments/robinson-dragonpay-130x70.png"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-1 text-center py-2">
+            <img
+              src="images/icons/payments/ruralnet-dragonpay-130x70.png"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-1 text-center py-2">
+            <img
+              src="images/icons/payments/smdept-dragonpay-130x70.png"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-1 text-center py-2">
+            <img
+              src="images/icons/payments/RDPawnshop.png"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-1 text-center">
+            <img
+              src="images/icons/payments/palawanpawnshop.png"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-1 text-center py-2">
+            <img src="images/icons/payments/711.png" alt="" class="img-fluid" />
+          </div>
+        </div>
       </div>
     </div>
+    <div class="grid-line d-flex"></div>
     <!-- END PAYMENT METHODS -->
 
     <!-- START FOOTER -->
+    <div class="footer_bg">
+      <div class="container py-2">
+        <div class="row footer1 py-2">
+          <div class="col-3 py-2">
+            <ul class="foot_li_a">
+              <li>Get to know us</li>
+              <li></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Newsroom</a></li>
+              <li><a href="#">Eyetems Blog</a></li>
+            </ul>
+          </div>
+          <div class="col-3 py-2">
+            <ul class="foot_li_a">
+              <li>Buy at EyeTems</li>
+              <li></li>
+              <li><a href="#">How to Buy</a></li>
+              <li><a href="#">Safety Guidelines</a></li>
+              <li><a href="#">Payments and Refund</a></li>
+            </ul>
+          </div>
+          <div class="col-3 py-2">
+            <ul class="foot_li_a">
+              <li>Sell at EyeTems</li>
+              <li></li>
+              <li><a href="#">How to Sell</a></li>
+              <li><a href="#">Rules & Regulations</a></li>
+              <li><a href="#">Request Payment</a></li>
+              <li><a href="#">Commision Fee</a></li>
+            </ul>
+          </div>
+          <div class="col-3 py-2 d-flex">
+            <ul class="foot_li_a">
+              <li>Support & resources</li>
+              <li></li>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Affiate Program</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grid-line d-flex"></div>
     <div class="container py-2">
-      <div class="row footer1">
-        <h1>Footer</h1>
-      </div>
       <div class="row footer2">
-        <h1>Footer</h1>
-      </div>
-      <div class="row footer3">
-        <h1>Footer</h1>
+        <div class="col-8">
+          <h6>Registered names and trademarks are the copyright and property of their respective owners.</h6>
+          <ul class="d-flex foot2ul gap-2">
+            <li>© 2023 EyeTems</li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Legal</a></li>
+          </ul>
+        </div>
+        <div class="col-4">
+          <ul class="foot2_svg d-flex flex-row-reverse">
+            <li><a href=""><button class="foot_circle_btn"><img src="images/icons/footer/facebook.svg" alt="" width="16" height="16"></button></a></li>
+            <li><a href=""><button class="foot_circle_btn"><img src="images/icons/footer/twitterx.svg" alt="" width="16" height="16"></a></button></li>
+            <li><a href=""><button class="foot_circle_btn"><img src="images/icons/footer/youtube.svg" alt="" width="16" height="16"></button></a></li>
+          </ul>
+        </div>
       </div>
     </div>
     <!-- END FOOTER -->
-    <!-- Messenger Chat plugin Code -->
-    <div id="fb-root"></div>
-
-    <!-- Your Chat plugin code -->
-    <div id="fb-customer-chat" class="fb-customerchat"></div>
-
-    <script>
-      var chatbox = document.getElementById("fb-customer-chat");
-      chatbox.setAttribute("page_id", "134284533095201");
-      chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
-
-    <!-- Your SDK code -->
-    <script>
-      window.fbAsyncInit = function () {
-        FB.init({
-          xfbml: true,
-          version: "v18.0",
-        });
-      };
-
-      (function (d, s, id) {
-        var js,
-          fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
-        fjs.parentNode.insertBefore(js, fjs);
-      })(document, "script", "facebook-jssdk");
-    </script>
   </body>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"

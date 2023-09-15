@@ -8,15 +8,6 @@
   border-bottom: 2px solid transparent;
 }
 
-.eyetemscon1 {
-  border: 5px solid black;
-  border-radius: 20px;
-  color: #303030;
-  width: 100%;
-  height: 500px;
-  background-color: #dddbcb;
-}
-
 .btnlogin {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -25,6 +16,10 @@
   font-size: 15px;
   width: 100px;
   height: 40px;
+  border: none;
+  background-color: #d86b40;
+  font-size: 17px;
+  font-weight: 480;
 }
 
 .btnreg {
@@ -35,6 +30,18 @@
   font-size: 15px;
   width: 100px;
   height: 40px;
+  border: none;
+  background-color: #d86b40;
+  font-size: 17px;
+  font-weight: 480;
+}
+
+.btnlogin:hover {
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.24), 0 10px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btnreg:hover {
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .searchbtn {
@@ -43,8 +50,9 @@
   border-top-left-radius: 40px;
   border-bottom-left-radius: 40px;
   border-right: none;
-  border: white;
+  border: 1px solid rgba(85, 84, 84, 0.4);
   outline: 0;
+  border-right: 0;
 }
 
 .searchbtn:focus {
@@ -56,18 +64,183 @@
   border-top-right-radius: 40px;
   border-bottom-right-radius: 40px;
   border-left: none;
-  border: white;
+  border: 1px solid rgba(85, 84, 84, 0.4);
   background-color: white;
 }
 
 .searchiconbtn:hover {
-  color: #008080;
+  color: #d86b40;
 }
 
+.loginbtn a {
+  text-decoration: none;
+}
 .navbarcolor {
-  background-color: #008080;
+  background-color: white;
+}
+
+.nav_ul {
+  font-size: 17px;
+  font-weight: bold;
 }
 
 body {
-  background-color: #050505;
+  background-color: #f7f7f7;
+}
+
+.catcard {
+  text-decoration: none;
+  color: inherit;
+}
+
+.catcat {
+  text-decoration: none;
+  color: black;
+}
+
+.caticon_Coins {
+  background-color: rgb(240, 95, 129);
+  border-radius: 10%;
+  width: 84px;
+  height: 84px;
+}
+
+.catimage_Coins {
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url("images/caticon/gamecoin.png");
+}
+
+.caticon_Items {
+  background-color: rgb(119, 116, 255);
+  border-radius: 10%;
+  width: 84px;
+  height: 84px;
+}
+
+.catimage_Items {
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url("images/caticon/items.png");
+}
+
+.caticon_Acc {
+  background-color: rgb(48, 146, 235);
+  border-radius: 10%;
+  width: 84px;
+  height: 84px;
+}
+
+.catimage_Acc {
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url("images/caticon/accounts.png");
+}
+
+.caticon_Skins {
+  background-color: rgb(199, 110, 254);
+  border-radius: 10%;
+  width: 84px;
+  height: 84px;
+}
+
+.catimage_Skins {
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url("images/caticon/skins.png");
+}
+
+.caticon_Topup {
+  background-color: rgb(111, 185, 53);
+  border-radius: 10%;
+  width: 84px;
+  height: 84px;
+}
+
+.catimage_Topup {
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url("images/caticon/topup.png");
+}
+
+.caticon_Giftcard {
+  background-color: rgb(46, 189, 181);
+  border-radius: 10%;
+  width: 84px;
+  height: 84px;
+}
+
+.catimage_Giftcard {
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url("images/caticon/giftcards.png");
+}
+
+.card-img {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}
+
+.cust_bg {
+  background-color: #549aef;
+  padding-right: 0;
+  padding-left: 0;
+  margin: 0;
+}
+
+.pay_bg {
+  background-color: #f7f7f9;
+}
+
+.footer_bg {
+  background-color: #f7f7f9;
+}
+
+.foot_li_a {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+.foot_li_a a {
+  text-decoration: none;
+  color: #212529;
+}
+
+.foot_li_a a:hover {
+  text-decoration: underline;
+}
+
+.foot2ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.foot2ul a {
+  text-decoration: none;
+  color: #212529;
+}
+
+.foot2ul a:hover {
+  text-decoration: underline;
+}
+
+.foot2_svg {
+  display: flex;
+  list-style-type: none;
+  align-items: right;
+}
+
+.foot_circle_btn {
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  width: 42px;
+  height: 42px;
+  border: none;
+}
+
+.foot_circle_btn:hover {
+  background-color: white;
 }
