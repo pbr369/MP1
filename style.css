@@ -105,6 +105,10 @@ body {
   height: 84px;
 }
 
+.caticon_Coins:hover {
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
 .catimage_Coins {
   background-size: cover;
   background-position: 50% 50%;
@@ -116,6 +120,10 @@ body {
   border-radius: 10%;
   width: 84px;
   height: 84px;
+}
+
+.caticon_Items:hover {
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .catimage_Items {
@@ -131,6 +139,10 @@ body {
   height: 84px;
 }
 
+.caticon_Acc:hover {
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
 .catimage_Acc {
   background-size: cover;
   background-position: 50% 50%;
@@ -142,6 +154,10 @@ body {
   border-radius: 10%;
   width: 84px;
   height: 84px;
+}
+
+.caticon_Skins:hover {
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .catimage_Skins {
@@ -157,6 +173,10 @@ body {
   height: 84px;
 }
 
+.caticon_Topup:hover {
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
 .catimage_Topup {
   background-size: cover;
   background-position: 50% 50%;
@@ -168,6 +188,10 @@ body {
   border-radius: 10%;
   width: 84px;
   height: 84px;
+}
+
+.caticon_Giftcard:hover {
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .catimage_Giftcard {
