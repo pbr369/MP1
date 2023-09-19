@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EyeTems</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/png" href="/images/logo.png" />
+  </head>
+  <body>
+    <header class="sticky-top navbarcolor">
+      <div class="container p-0">
+        <div class="row-fluid">
+          <nav class="navbar navbar-expand-lg navbarcolor">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"
+                ><img src="images/logo.png" alt="" width="64" height="64"
+              /></a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav_ul">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      aria-current="page"
+                      href="index.html"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="faq.html">FAQ</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Categories
+                    </a>
+                    <ul class="dropdown-menu nav_ul">
+                      <li><a class="dropdown-item" href="#">Game Coins</a></li>
+                      <li><a class="dropdown-item" href="#">Items</a></li>
+                      <li><a class="dropdown-item" href="#">Accounts</a></li>
+                      <li><a class="dropdown-item" href="#">Skins</a></li>
+                      <li><a class="dropdown-item" href="#">Top Up</a></li>
+                      <li><a class="dropdown-item" href="#">Gift Cards</a></li>
+                      <!-- <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li> -->
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="buy.html">Buy</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="sell.html">Sell</a>
+                  </li>
+                </ul>
+                <form class="d-flex px-1" role="search">
+                  <input
+                    class="searchbtn"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <button class="searchiconbtn" type="submit">
+                    <i class="ri-search-line"></i>
+                  </button>
+                </form>
+                <form class="d-flex px-1" role="button">
+                  <button type="button" name="btnlogin" class="btnlogin">
+                    Login
+                  </button>
+                </form>
+                <form class="d-flex px-1" role="button">
+                  <button type="button" name="btnreg" class="btnreg">
+                    Register
+                  </button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="grid-line d-flex"></div>
+      <!-- Messenger Chat plugin Code -->
+      <div id="fb-root"></div>
+
+      <!-- Your Chat plugin code -->
+      <div id="fb-customer-chat" class="fb-customerchat"></div>
+
+      <script>
+        var chatbox = document.getElementById("fb-customer-chat");
+        chatbox.setAttribute("page_id", "134284533095201");
+        chatbox.setAttribute("attribution", "biz_inbox");
+      </script>
+
+      <!-- Your SDK code -->
+      <script>
+        window.fbAsyncInit = function () {
+          FB.init({
+            xfbml: true,
+            version: "v18.0",
+          });
+        };
+
+        (function (d, s, id) {
+          var js,
+            fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s);
+          js.id = id;
+          js.src =
+            "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+          fjs.parentNode.insertBefore(js, fjs);
+        })(document, "script", "facebook-jssdk");
+      </script>
+    </header>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>Sell Your Items</h2>
+          <div class="mb-3 w-50">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Item Name</label
+            >
+            <input
+              type="itemname"
+              class="form-control"
+              id="exampleFormControlInput1"
+            />
+          </div>
+          <div class="input-group mb-3 w-25">
+            <span class="input-group-text">PHP</span>
+            <input
+              type="text"
+              class="form-control"
+              aria-label="Amount (to the nearest dollar)"
+            />
+            <span class="input-group-text">.00</span>
+          </div>
+          <div class="mb-3 w-25">
+            <label for="formFile" class="form-label"
+              >Upload Image</label
+            >
+            <input class="form-control" type="file" id="formFile" />
+          </div>
+          <div class="mb-3 w-50">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Item Description</label
+            >
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+            ></textarea>
+          </div>
+          <div class="mb-3 w-50">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Category</label
+            >
+            <select
+              class="form-select form-select-md"
+              aria-label=".form-select-md example"
+            >
+              <option selected>Select Category</option>
+              <option value="1">Game Coins</option>
+              <option value="2">Items</option>
+              <option value="3">Accounts</option>
+              <option value="4">Skins</option>
+              <option value="5">Top Up</option>
+              <option value="6">Gift Cards</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- START FOOTER -->
+    <div class="grid-line d-flex"></div>
+    <div class="footer_bg">
+      <div class="container py-2">
+        <div class="row footer1 py-2">
+          <div class="col-3 py-2">
+            <ul class="foot_li_a">
+              <li><h6>Get to know us</h6></li>
+              <li></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Newsroom</a></li>
+              <li><a href="#">Eyetems Blog</a></li>
+            </ul>
+          </div>
+          <div class="col-3 py-2">
+            <ul class="foot_li_a">
+              <li><h6>Buy at EyeTems</h6></li>
+              <li></li>
+              <li><a href="#">How to Buy</a></li>
+              <li><a href="#">Safety Guidelines</a></li>
+              <li><a href="#">Payments and Refund</a></li>
+            </ul>
+          </div>
+          <div class="col-3 py-2">
+            <ul class="foot_li_a">
+              <li><h6>Sell at EyeTems</h6></li>
+              <li></li>
+              <li><a href="#">How to Sell</a></li>
+              <li><a href="#">Rules & Regulations</a></li>
+              <li><a href="#">Request Payment</a></li>
+              <li><a href="#">Commision Fee</a></li>
+            </ul>
+          </div>
+          <div class="col-3 py-2 d-flex">
+            <ul class="foot_li_a">
+              <li><h6>Support & resources</h6></li>
+              <li></li>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Affiate Program</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grid-line d-flex"></div>
+    <div class="container py-2">
+      <div class="row footer2">
+        <div class="col-8">
+          <h6>
+            Registered names and trademarks are the copyright and property of
+            their respective owners.
+          </h6>
+          <ul class="d-flex foot2ul gap-2 mt-3">
+            <li>© 2023 EyeTems</li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Legal</a></li>
+          </ul>
+        </div>
+        <div class="col-4">
+          <ul class="foot2_svg d-flex flex-row-reverse">
+            <li>
+              <a href=""
+                ><button class="foot_circle_btn">
+                  <img
+                    src="images/icons/footer/facebook.svg"
+                    alt=""
+                    width="16"
+                    height="16"
+                  /></button
+              ></a>
+            </li>
+            <li>
+              <a href=""
+                ><button class="foot_circle_btn">
+                  <img
+                    src="images/icons/footer/twitterx.svg"
+                    alt=""
+                    width="16"
+                    height="16"
+                  /></button
+              ></a>
+            </li>
+            <li>
+              <a href=""
+                ><button class="foot_circle_btn">
+                  <img
+                    src="images/icons/footer/youtube.svg"
+                    alt=""
+                    width="16"
+                    height="16"
+                  /></button
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- END FOOTER -->
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"
+  ></script>
+</html>
